@@ -65,7 +65,7 @@ namespace MyPathFinding
                 for (int i = 1; i < onPathChangedEventArgs.pathFinding.GetVisitedPath().Count; i++)
                 {
                     PathNode searchNode = onPathChangedEventArgs.pathFinding.GetVisitedPath()[i];
-                    SplashKit.FillRectangle(Color.Grey, searchNode.X * pathFindingGUI.CellSize + 2, searchNode.Y * pathFindingGUI.CellSize + 2, pathFindingGUI.CellSize - 2, pathFindingGUI.CellSize - 2);
+                    SplashKit.FillRectangle(Color.Gray, searchNode.X * pathFindingGUI.CellSize + 2, searchNode.Y * pathFindingGUI.CellSize + 2, pathFindingGUI.CellSize - 2, pathFindingGUI.CellSize - 2);
                     if (i % 5 == 0) pathFindingGUI.window.Refresh(60);
                 }
                 // If there is no path found, return.
